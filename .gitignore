@@ -1,7 +1,8 @@
 HELP.md
-target/
+target
 mvnw*
-.mvn/
+.mvn
+repository.tar.gz
 **/src/main/**/target/
 **/src/test/**/target/
 

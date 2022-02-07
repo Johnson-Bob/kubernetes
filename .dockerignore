@@ -1,0 +1,11 @@
+.idea
+*.iml
+repository
+mvnw*
+.mvn
+repository.tar.gz
+**/src/main/**/target/
+**/src/test/**/target/
+target
+HELP.md
+
