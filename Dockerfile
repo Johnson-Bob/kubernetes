@@ -5,7 +5,7 @@ COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
 RUN mvn -s /usr/share/maven/ref/settings-docker.xml package
 
-FROM openjdk:latest
+FROM openjdk:17.0.2-oraclelinux8
 EXPOSE 8080 5005
 COPY --from=BUILD /usr/src/app/target /opt/target
 WORKDIR /opt/target
