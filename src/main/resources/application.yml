@@ -1,0 +1,5 @@
+spring:
+  config:
+    import:
+    - "classpath:/config/test.yml"
+    - "classpath:/config/test1.yml"

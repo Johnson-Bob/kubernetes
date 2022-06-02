@@ -13,8 +13,8 @@ public class HelloWorldRouter {
 
   @Bean
   public RouterFunction<ServerResponse> route(HelloWorldHandler handler) {
-    return RouterFunctions.route(
-        RequestPredicates.GET("/hello").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),
+    return RouterFunctions.route(RequestPredicates.GET("/hello")
+            .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
         handler::hello);
   }
 }
