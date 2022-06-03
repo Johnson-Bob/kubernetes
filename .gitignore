@@ -2,6 +2,7 @@ HELP.md
 target
 mvnw*
 .mvn
+repository
 repository.tar.gz
 **/src/main/**/target/
 **/src/test/**/target/

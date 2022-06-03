@@ -1,5 +1,5 @@
 FROM maven:3.8.4-openjdk-17 as BUILD
-#ADD repository.tar.gz /usr/share/maven/ref
+repository.tar.gz /usr/share/maven/ref
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
